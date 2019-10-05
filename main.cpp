@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, World! this is neel" << std::endl;
+    std::cout << "now checking git if working" << std::endl;
     return 0;
 }
