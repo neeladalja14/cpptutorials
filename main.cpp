@@ -2,37 +2,17 @@
 using namespace std;
 
 int main(){
+    // multidimentional arraay is created for animals. it has structure like 2x3
+    string animal[2][3]= {{"dog",   "cat",     "lion"},
+                          {"mouse", "girrafe", "donkey"}
+    };
 
-    //this is the simple array for the integer to be printed.
-    int array[3];
-
-    array[0] = 23;
-    array[1] = 43;
-    array[2] = 31;
-
-    cout << array[0] << endl;
-    cout << array[1] << endl;
-    cout << array[2] << endl;
-
-
-    int i;
-    // this is the array for double to print the decimal numbers,
-
-    cout<<"the array of double is :"<<endl;
-
-    double doublearray[4] = {2.3,3.5,4.1,5.7};
-
-    for(i=0;i<4;i++){
-        doublearray[i] *= 2;
-        cout <<"value at index   "<< i << " is " << doublearray[i]<< endl;
-    }
-
-
-    //this is the simple array for text/string to print the words.
-
-    string textarray[5] = {"apple", "banana", "pinapple","khajur", "chickoo"};
-
-    for(i=0; i<5;i++){
-        cout<<"this is : "<< textarray[i] << endl;
+    //the first loop is actually going through no of rows. if we change the values, the difference can be seen.
+    for(int i=0; i<2; i++){
+        //the second loop goes through the elements inside the two arraays. if we hange thee value to 2, then it will rint two elements of both row 1 and 2.
+        for(int j=0; j<3;j++){
+            cout << animal[i][j] <<" "<< flush;
+        }
+        cout<<endl;
     }
 }
