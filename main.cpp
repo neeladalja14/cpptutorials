@@ -1,23 +1,34 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    int value = 4;
 
-    //this is the switch case for the different integer values if the user chooses the number within these cases,
-    //then the corresponding case will awake and return the answer respective to that.
-
-    switch (value) {
-        case 4:         //currently the caase 4 would work because the value of the variable: VALUE is set to 4.
-            cout<<"the number is valid" << flush;
+//this is a function printing promts for user to press selection button.
+void ShowMenu(){
+    cout << "press '1' for searching.." << endl;
+    cout << "press '2' for downloading.." << endl;
+    cout << "press '3' for quiting.." << endl<<endl;
+}
+// this function taking inout for prompt and outputting the result related to it.
+void Processing(){
+    int input;
+    cin >> input;
+    switch(input){
+        case 1:
+            cout << "searching.." << endl;
             break;
-        case 5:     //if we set the value of VALUE = 5 then this case wil work
-            cout << "the number is valid" << flush;
+        case 2:
+            cout << "downloading.." << endl;
             break;
-        case 6:
-            cout << "thee number is valid" << flush;
+        case 3:
+            cout << "quitting.." << endl;
             break;
-        default:        // all the other values other than mentioned above will return this,
-            cout<< "the number is invalid" << flush;
+        default:
+            cout << "please enter valid input" << endl;
     }
+}
+int main(){
+
+    //here, both the functions are being called inside the main function.
+    ShowMenu();
+    Processing();
 }
