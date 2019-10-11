@@ -2,18 +2,22 @@
 using namespace std;
 
 int main(){
-    // multidimentional arraay is created for animals. it has structure like 2x3
-    int animal[2][3]= {{2,3,4},
-                          {6,7,8}
-    };
+    int value = 4;
 
-    //the first loop is actually going through no of rows. if we change the values, the difference can be seen.
-    for(int i=0; i<2; i++){
-        //the second loop goes through the elements inside the two arraays. if we hange thee value to 2, then it will rint two elements of both row 1 and 2.
-        for(int j=0; j<3;j++){
-            animal[i][j] *= 2;
-            cout << animal[i][j] <<" "<< flush;
-        }
-        cout<<endl;
+    //this is the switch case for the different integer values if the user chooses the number within these cases,
+    //then the corresponding case will awake and return the answer respective to that.
+
+    switch (value) {
+        case 4:         //currently the caase 4 would work because the value of the variable: VALUE is set to 4.
+            cout<<"the number is valid" << flush;
+            break;
+        case 5:     //if we set the value of VALUE = 5 then this case wil work
+            cout << "the number is valid" << flush;
+            break;
+        case 6:
+            cout << "thee number is valid" << flush;
+            break;
+        default:        // all the other values other than mentioned above will return this,
+            cout<< "the number is invalid" << flush;
     }
 }
