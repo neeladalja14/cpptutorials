@@ -6,9 +6,16 @@
 #include <iostream>
 using namespace std;
 
-//this void function is connected to cat class as blueprint. this function stays under cat class only(::) denotes tha
+cat::cat(){     //this is what constructor prints hn called and sets the value of happy to true.
+    cout<<"cat created"<<endl;
+    happy = true;
+}
+cat::~cat(){        //this is what destructor prints when it is called.
+    cout<<"cat destroyed"<<endl;
+}
+
 void cat::speak(){
-    if(happy){  // this condition works according to the function at the bottom which is called inside the main file.
+    if(happy){
         cout << "i am happy, meow"<<endl;
     }
     else
@@ -17,9 +24,3 @@ void cat::speak(){
     }
 }
 
-void cat::makehappy(){  //this function make change to the private object in the class which is happy.
-    happy = true;   //the vaule of happy is set to true.
-}
-void cat::makesad(){    //this function makes changes to the happy object which is private in cat class.
-    happy = false;  //thee value of happy iss set to faalse here.
-}

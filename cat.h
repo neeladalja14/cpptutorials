@@ -13,8 +13,8 @@ private:
     bool happy;     //thi is private object which cannot be accessed outside the class.
 public:
     void speak();
-    void makehappy();
-    void makesad();
+    cat();  //this is constructor
+    ~cat(); //this is destructor
 
 };
 #endif //CPPCLASSES_CAT_H
