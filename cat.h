@@ -6,10 +6,11 @@
 #define CPPCLASSES_CAT_H
 
 //the class file cat.cpp is implemented here to call and the
-//class has two functions which are inside the cat class.
-//the (public) allows this functions to be used outside the class also.
+//class has two objects which are inside the cat class.
+//the (public) allows this objects to be used outside the class also.
 class cat {
 public:
+    bool happy;     //this object is conditional for printing something according to the value in main function.
     void speak();
     void jump();
 };
