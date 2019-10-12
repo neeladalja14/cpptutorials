@@ -1,6 +1,19 @@
 #include <iostream>
+#include "begin.h"
 using namespace std;
 
+
+int main(){
+
+    //here, both the functions are being called inside the main function.
+    ShowMenu();
+
+    //the processing function returns input value from the top, and that value gets implemented here(taken by selection).
+    int selection = GetInput();       //the selection variable gets the input value and that value is passed into the function.
+    ProcessSelect(selection);
+
+    return 0;
+}
 
 //this is a function printing prompts for user to press selection button.
 void ShowMenu(){
@@ -30,16 +43,4 @@ void ProcessSelect(int Uselected){
         default:
             cout << "please enter valid input" << endl;
     }
-}
-
-int main(){
-
-    //here, both the functions are being called inside the main function.
-    ShowMenu();
-
-    //the processing function returns input value from the top, and that value gets implemented here(taken by selection).
-    int selection = GetInput();       //the selection variable gets the input value and that value is passed into the function.
-    ProcessSelect(selection);
-
-    return 0;
 }

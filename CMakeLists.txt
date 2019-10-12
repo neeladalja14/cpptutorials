@@ -3,4 +3,4 @@ project(cpptutorials)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cpptutorials main.cpp)
+add_executable(cpptutorials main.cpp begin.h)
