@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/neela/Desktop/cppclasses/cat.cpp
+cat.h
+C:/Users/neela/Desktop/cppclasses/cat.h
+iostream
+-
+
+C:/Users/neela/Desktop/cppclasses/cat.h
+
+C:/Users/neela/Desktop/cppclasses/main.cpp
+iostream
+-
+cat.h
+C:/Users/neela/Desktop/cppclasses/cat.h
+
