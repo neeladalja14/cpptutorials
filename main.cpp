@@ -2,12 +2,15 @@
 #include "cat.h"
 
 int main() {
-    //the cat class is called and the variable given is cat1.
+    //the cat class has cat 1 performing some functions in it.
     cat cat1;
-    //thee cat1 variable calls the speak and jump functions.
-    //therefore to call the function from a class we write (cat1.speak();, cat1.jump();).
-    cat1.happy=true;    //this is the object which gives thee value according to true or false.
+    cat1.makehappy();//the makehappy has va;ue of false which enables the if condition in speak function.
     cat1.speak();
-    cat1.jump();
+
+    //cat class is called and the cat2 is another variable, likewise many other cats(3,4,5,6) can be created.
+    cat cat2;//this is
+    cat2.makesad();//the makesad has va;ue of false which enables the else condition in speak function.
+    cat2.speak();
+
     return 0;
 }
